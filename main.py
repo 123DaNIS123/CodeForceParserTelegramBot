@@ -9,7 +9,7 @@ from mybot import TheTeleBot
 
 def periodicParse():
     print("periodicParse")
-    s.enter(20, 1, myParser.insert_all_to_db, argument=())
+    s.enter(3600, 1, myParser.insert_all_to_db, argument=())
     s.run()
     print("SCHEDULED THING HAPPENED")
 
